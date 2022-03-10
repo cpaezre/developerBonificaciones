@@ -32,6 +32,10 @@ namespace Bonificaciones
             this.btnCargar = new System.Windows.Forms.Button();
             this.dgvEmpleados = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtMes = new System.Windows.Forms.TextBox();
+            this.txtAnio = new System.Windows.Forms.TextBox();
+            this.lblMes = new System.Windows.Forms.Label();
+            this.lblAnio = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -65,11 +69,47 @@ namespace Bonificaciones
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
+            // txtMes
+            // 
+            this.txtMes.Location = new System.Drawing.Point(125, 12);
+            this.txtMes.Name = "txtMes";
+            this.txtMes.Size = new System.Drawing.Size(35, 20);
+            this.txtMes.TabIndex = 3;
+            // 
+            // txtAnio
+            // 
+            this.txtAnio.Location = new System.Drawing.Point(189, 12);
+            this.txtAnio.Name = "txtAnio";
+            this.txtAnio.Size = new System.Drawing.Size(55, 20);
+            this.txtAnio.TabIndex = 4;
+            // 
+            // lblMes
+            // 
+            this.lblMes.AutoSize = true;
+            this.lblMes.Location = new System.Drawing.Point(97, 15);
+            this.lblMes.Name = "lblMes";
+            this.lblMes.Size = new System.Drawing.Size(27, 13);
+            this.lblMes.TabIndex = 5;
+            this.lblMes.Text = "Mes";
+            // 
+            // lblAnio
+            // 
+            this.lblAnio.AutoSize = true;
+            this.lblAnio.Location = new System.Drawing.Point(161, 15);
+            this.lblAnio.Name = "lblAnio";
+            this.lblAnio.Size = new System.Drawing.Size(26, 13);
+            this.lblAnio.TabIndex = 6;
+            this.lblAnio.Text = "Año";
+            // 
             // FormBonificacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblAnio);
+            this.Controls.Add(this.lblMes);
+            this.Controls.Add(this.txtAnio);
+            this.Controls.Add(this.txtMes);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCargar);
             this.Name = "FormBonificacion";
@@ -77,6 +117,7 @@ namespace Bonificaciones
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -85,6 +126,10 @@ namespace Bonificaciones
         private System.Windows.Forms.Button btnCargar;
         private System.Windows.Forms.DataGridView dgvEmpleados;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txtMes;
+        private System.Windows.Forms.TextBox txtAnio;
+        private System.Windows.Forms.Label lblMes;
+        private System.Windows.Forms.Label lblAnio;
     }
 }
 
